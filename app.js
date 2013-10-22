@@ -4,6 +4,7 @@
 
 var express = require('express')
 , 	routes = require('./routes')
+,	downloads = require('./routes/downloads')
 , 	user = require('./routes/user')
 , 	http = require('http')
 , 	path = require('path')
@@ -29,6 +30,11 @@ if ('development' == app.get('env')) {
 }
 
 app.post('/calas', routes.index);
+app.get('/downloads', function (req, res){
+	var file = './public' + req.query.item;
+	console.log(file);
+	res.download(file);
+});
 app.get('/', function(req,res){
 	res.send("Holla");
 });
