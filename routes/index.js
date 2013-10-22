@@ -80,6 +80,10 @@ exports.index = function(req, res){
 		textColor = "#ffffff";
 	else if(POST.cc != 3 && POST.cu == 8)
 		textColor = "#ffffff";
+	else if(POST.cc == 0 && POST.cu == 9)
+		textColor = "#b81817";
+	else if(POST.cc == 1 && POST.cu == 9)
+		textColor = "#844291";
 	else textColor = "#f1bf7f";
 
 	switch(POST.cu){
