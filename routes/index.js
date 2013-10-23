@@ -44,8 +44,10 @@ exports.index = function(req, res){
 		textColor = "#b81817";
 	else if(POST.cc != 0 && POST.cu == 1)
 		textColor = "#ffffff";
-	else if(POST.cu == 2)
+	else if(POST.cc != 0 && POST.cu == 2)
 		textColor = "#fff";
+	else if(POST.cc == 0 && POST.cu == 2)
+		textColor = "#844291";
 	else if(POST.cc == 3 && POST.cu == 3)
 		textColor = "#b81817";
 	else if(POST.cu == 3)
@@ -54,31 +56,31 @@ exports.index = function(req, res){
 		textColor = "#844291";
 	else if(POST.cc != 0 && POST.cu == 4)
 		textColor = "#ffffff";
-	else if(POST.cc != 0 && POST.cu == 5)
-		textColor = "#fcd800";
-	else if(POST.cc != 1 && POST.cu == 5)
+	else if(POST.cc == 0 && POST.cu == 5)
 		textColor = "#248eac";
-	else if(POST.cc != 2 && POST.cu == 5)
+	else if(POST.cc == 1 && POST.cu == 5)
+		textColor = "#248eac";
+	else if(POST.cc == 2 && POST.cu == 5)
 		textColor = "#844291";
-	else if(POST.cc != 3 && POST.cu == 5)
+	else if(POST.cc == 3 && POST.cu == 5)
 		textColor = "#b81817";
 	else if(POST.cu == 6)
 		textColor = "#ffffff";
-	else if(POST.cc != 0 && POST.cu == 7)
+	else if(POST.cc == 0 && POST.cu == 7)
 		textColor = "#b81817";
-	else if(POST.cc != 1 && POST.cu == 7)
+	else if(POST.cc == 1 && POST.cu == 7)
 		textColor = "#844291";
-	else if(POST.cc != 2 && POST.cu == 7)
+	else if(POST.cc == 2 && POST.cu == 7)
 		textColor = "#ffffff";
-	else if(POST.cc != 3 && POST.cu == 7)
+	else if(POST.cc == 3 && POST.cu == 7)
 		textColor = "#61af20";
-	else if(POST.cc != 0 && POST.cu == 8)
+	else if(POST.cc == 0 && POST.cu == 8)
 		textColor = "#b81817";
-	else if(POST.cc != 1 && POST.cu == 8)
+	else if(POST.cc == 1 && POST.cu == 8)
 		textColor = "#248eac";
-	else if(POST.cc != 2 && POST.cu == 8)
+	else if(POST.cc == 2 && POST.cu == 8)
 		textColor = "#ffffff";
-	else if(POST.cc != 3 && POST.cu == 8)
+	else if(POST.cc == 3 && POST.cu == 8)
 		textColor = "#ffffff";
 	else if(POST.cc == 0 && POST.cu == 9)
 		textColor = "#b81817";

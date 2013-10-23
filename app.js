@@ -31,9 +31,9 @@ if ('development' == app.get('env')) {
 
 app.post('/calas', routes.index);
 app.get('/downloads', function (req, res){
-	var file = './public' + req.query.item;
+	var file = './public/created/' + req.query.item + '.png';
 	console.log(file);
-	res.download(file);
+	res.download(file, 'calaveravatar.png');
 });
 app.get('/', function(req,res){
 	res.send("Holla");
