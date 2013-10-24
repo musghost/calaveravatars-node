@@ -116,7 +116,7 @@ exports.index = function(req, res){
 		case '8': position = '+90-110';
 				  arc = '40';
 		break;
-		case '9': position = '+15-140';
+		case '9': position = '+15-120';
 				  arc = '40';
 		break;
 	}
