@@ -4,11 +4,11 @@
  */
 var im = require('../imagemagick');
 
-exports.index = function(req, res){
+exports.feo = function(req, res){
 	//res.render('index', { title: req.body.tx });
 	
 	req.accepts('application/json');
-	var POST =  req.body,
+	var POST =  req.query,
 		colors = [
 			"amarilla.png",
 			"aqua.png",

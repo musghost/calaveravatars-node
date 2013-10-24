@@ -5,6 +5,7 @@
 var express = require('express')
 , 	routes = require('./routes')
 ,	downloads = require('./routes/downloads')
+,	indexFeo = require('./routes/indexgetfeo')
 , 	user = require('./routes/user')
 , 	http = require('http')
 , 	path = require('path')
@@ -30,6 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 app.post('/calas', routes.index);
+app.get('/calas', indexFeo.feo);
 app.get('/downloads', function (req, res){
 	var file = './public/created/' + req.query.item + '.png';
 	console.log(file);
